@@ -82,4 +82,18 @@ similar platforms, with a solid foundation in data structures and algorithms.`,
       ],
     },
   ],
+  achievements: [
+    {
+      date: "Dec 2022",
+      description: "Won 1st place in Hackathon XYZ for developing a real-time chat AI assistant."
+    },
+    {
+      date: "Aug 2021",
+      description: "Published a research paper on micro-frontend architectures in IEEE Conference."
+    },
+    {
+      date: "May 2020",
+      description: "Completed AWS Certified Solutions Architect - Associate certification."
+    },
+  ],
 };
