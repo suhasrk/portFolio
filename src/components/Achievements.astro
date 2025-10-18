@@ -35,7 +35,20 @@ const hasAchievements = siteConfig.achievements && siteConfig.achievements.lengt
                 {/* Achievement card */}
                 <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5 md:p-6 hover:shadow-md transition-shadow duration-300">
                   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                    <p class="text-base sm:text-lg font-semibold text-gray-900">{ach.description}</p>
+                    {ach.link ? (
+                      <a
+                        href={ach.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-base sm:text-lg font-semibold text-gray-900 hover:text-[var(--accent-color)] hover:underline transition-colors duration-200"
+                      >
+                        {ach.description}
+                      </a>
+                    ) : (
+                      <p class="text-base sm:text-lg font-semibold text-gray-900">
+                        {ach.description}
+                      </p>
+                    )}
                     <span class="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-0">
                       {ach.date}
                     </span>

@@ -63,7 +63,7 @@ similar platforms, with a solid foundation in data structures and algorithms.`,
     },
     {
       company: "Hewlett Packard Enterprise",
-      title: "Software Engineering Intern",
+      title: "Research and Development Intern",
       dateRange: "Jan 2023 - July 2023",
       bullets: [
         "Built a UEFI tool in C and Python to automate OS installations by directly interacting with system firmware.",
@@ -84,16 +84,29 @@ similar platforms, with a solid foundation in data structures and algorithms.`,
   ],
   achievements: [
     {
-      date: "Dec 2022",
-      description: "Won 1st place in Hackathon XYZ for developing a real-time chat AI assistant."
+      date: "Aug 2025",
+      description: "Led the Grand Access release of Extreme Platform ONE as a core development team member, delivering key features for enterprise-scale deployment.",
+      link: "https://www.extremenetworks.com/platform-one"
     },
     {
-      date: "Aug 2021",
-      description: "Published a research paper on micro-frontend architectures in IEEE Conference."
+      date: "March 2025",
+      description: "Won 3rd place in Company-wide Hackathon for developing an AI-powered Visualization tool - AutoViz.",
+      link: "https://github.com/suhasrk/AutoViz"
     },
     {
-      date: "May 2020",
-      description: "Completed AWS Certified Solutions Architect - Associate certification."
+      date: "Aug 2023",
+      description: "Joined Extreme Networks as a Software Engineer.",
+      link: ""
+    },
+    {
+      date: "July 2023",
+      description: "Published a research paper on Ensemble Deep Learning based Real-time Log Anomaly Detection in IEEE Conference, Curtin University, Malaysia.",
+      link: "https://ieeexplore.ieee.org/document/10248821"
+    },
+    {
+      date: "Jan 2023",
+      description: "Joined Hewlett Packard Enterprise as a Research and Development Intern.",
+      link: ""
     },
   ],
 };
