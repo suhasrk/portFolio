@@ -85,6 +85,11 @@ similar platforms, with a solid foundation in data structures and algorithms.`,
   achievements: [
     {
       date: "Aug 2025",
+      description: "Contributed to the Angular CLI repository — my first open-source contribution.",
+      link: "https://github.com/angular/angular-cli/pull/30884"
+    },
+    {
+      date: "Aug 2025",
       description: "Led the Grand Access release of Extreme Platform ONE as a core development team member, delivering key features for enterprise-scale deployment.",
       link: "https://www.extremenetworks.com/platform-one"
     },
