@@ -1,5 +1,3 @@
-import { date } from "astro:schema";
-
 export const siteConfig = {
   name: "Suhas R K",
   title: "Engineering @ Extreme Networks",
