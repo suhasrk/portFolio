@@ -1,3 +1,5 @@
+import { date } from "astro:schema";
+
 export const siteConfig = {
   name: "Suhas R K",
   title: "Engineering @ Extreme Networks",
@@ -8,6 +10,7 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/suhasrk233/",
     twitter: "https://x.com/SuhasRK2",
     github: "https://github.com/suhasrk",
+    hashnode: "https://suhasrk.hashnode.dev",
   },
   aboutMe: `Software engineer with hands-on experience in building scalable, modular, and real-time applications using Angular,
 Spring Boot, and message-driven architectures. Proficient in integrating RESTful APIs, building micro-frontend
@@ -83,6 +86,11 @@ similar platforms, with a solid foundation in data structures and algorithms.`,
     },
   ],
   achievements: [
+    {
+      date: "October 2025",
+      description: "Wrote my first technical blog on Hashnode.",
+      link: "https://suhasrk.hashnode.dev"
+    },
     {
       date: "Aug 2025",
       description: "Contributed to the Angular CLI repository — my first open-source contribution.",

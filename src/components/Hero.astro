@@ -180,11 +180,11 @@ import banner from "../../assets/banner.jpg";
     <!-- Right: Image -->
     <div class="md:w-1/2 flex justify-center items-center animate-zoom-in">
       <div class="relative gradient-glow-wrapper fade-glow-wrapper">
-          <img
-            src={banner.src}
-            alt="Profile picture"
-            class="size-56 sm:size-72 md:size-96 rounded-full object-cover fade-mask"
-          />
+        <img
+          src={banner.src}
+          alt="Profile picture"
+          class="size-56 sm:size-72 md:size-96 rounded-full object-cover fade-mask"
+        />
       </div>
     </div>
   </div>
@@ -293,6 +293,32 @@ import banner from "../../assets/banner.jpg";
             class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8"
           >
             <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+          </svg>
+        </a>
+      )
+    }
+    {
+      siteConfig.social?.hashnode && (
+        <a
+          href={siteConfig.social.hashnode}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Hashnode"
+          class="transition-colors duration-300 hover:text-[var(--accent-color)]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8"
+          >
+            <path d="M20.2 12l-3.4-3.4a4.8 4.8 0 0 0-6.8 0L6.6 12a4.8 4.8 0 0 0 0 6.8l3.4 3.4a4.8 4.8 0 0 0 6.8 0l3.4-3.4a4.8 4.8 0 0 0 0-6.8z" fill="none" />
+            <path d="M12 12l4.8 4.8" fill="none" />
           </svg>
         </a>
       )
