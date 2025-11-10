@@ -13,7 +13,7 @@ export const siteConfig = {
   aboutMe: `Software engineer with hands-on experience in building scalable, modular, and real-time applications using Angular,
 Spring Boot, and message-driven architectures. Proficient in integrating RESTful APIs, building micro-frontend
 systems, and designing event-driven services with Apache Kafka and gRPC. Skilled in implementing CI/CD
-pipelines and working in Agile teams. Strong problem-solver with 300+ coding challenges solved on LeetCode and
+pipelines and working in Agile teams. Strong problem-solver with 200+ coding challenges solved on LeetCode and
 similar platforms, with a solid foundation in data structures and algorithms.`,
   skills: [
     "HTML", "CSS", "JavaScript", "TypeScript", "Java", "Python",
@@ -88,6 +88,10 @@ similar platforms, with a solid foundation in data structures and algorithms.`,
       date: "October 2025",
       description: "Wrote my first technical blog on Hashnode.",
       link: "https://suhasrk.hashnode.dev"
+    },
+    {
+      date: "Sept 2025",
+      description: "Took my first technical interview as an interviewer for SDE-1 candidates.",
     },
     {
       date: "Aug 2025",
