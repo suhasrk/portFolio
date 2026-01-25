@@ -52,9 +52,17 @@ similar platforms, with a solid foundation in data structures and algorithms.`,
   ],
   experience: [
     {
+      company: "Xactly Corporation",
+      title: "Software Engineer II",
+      dateRange: "Dec 2025 - Present",
+      bullets: [
+        "Contributing to the development of Xactly's Intelligent Revenue Platform, a cloud-based revenue management system that enables organizations to optimize their revenue streams and improve their bottom line.",
+      ],
+    },
+    {
       company: "Extreme Networks",
       title: "Software Engineer",
-      dateRange: "Aug 2023 - Present",
+      dateRange: "Aug 2023 - Dec 2025",
       bullets: [
         "Developed and maintained a cloud-based network management platform using Angular and Single-SPA, enabling a modular architecture with 8+ micro-frontend apps.",
         "Delivered pixel-perfect, accessible UIs in collaboration with UX teams using the EC-1 component library, and handled real-time data visualization with AG Grid and Highcharts.",
