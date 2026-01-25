@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Suhas R K",
-  title: "Engineering @ Extreme Networks",
+  title: "Engineering @ Xactly Corp",
   description: "Showcasing skills, projects, and experience.",
   accentColor: "#1d4ed8",
   social: {
