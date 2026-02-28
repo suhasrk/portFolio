@@ -3,3 +3,135 @@
 body {
   font-family: 'IBM Plex Mono', monospace;
 }
+
+@import "tailwindcss";
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* ---------- Floating root ---------- */
+#assistant-root {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+/* ---------- Avatar button ---------- */
+#assistant-fab {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease;
+}
+
+#assistant-fab:hover {
+  transform: scale(1.08);
+}
+
+#assistant-fab img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+/* ---------- Speech bubble ---------- */
+.assistant-bubble {
+  position: relative;
+  background: white;
+  color: #111;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 14px;
+  max-width: 180px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
+.assistant-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: 18px;
+  width: 12px;
+  height: 12px;
+  background: white;
+  transform: rotate(45deg);
+}
+
+.assistant-bubble.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.25s ease;
+}
+
+/* ---------- Dialog overlay ---------- */
+#assistant-dialog {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 9998;
+}
+
+/* Hidden */
+.assistant-hidden {
+  display: none !important;
+}
+
+/* ---------- Modal ---------- */
+.assistant-modal {
+  width: 520px;
+  height: 80vh;
+  margin: 24px;
+  background: #27272a;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+
+  /* animation */
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+
+/* visible animation */
+#assistant-dialog:not(.assistant-hidden) .assistant-modal {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ---------- Close ---------- */
+#assistant-close {
+  color: #f0f0f0;
+  align-self: flex-end;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+/* iframe */
+.assistant-modal iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+}

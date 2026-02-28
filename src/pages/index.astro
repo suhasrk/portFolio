@@ -41,5 +41,59 @@ import "../styles/global.css";
       <Education />
     </section>
     <Footer />
+    <div id="assistant-root">
+      <!-- Speech bubble -->
+      <div id="assistant-bubble" class="assistant-bubble">
+        Hi there! Need any help?
+      </div>
+    
+      <!-- Avatar button -->
+      <button id="assistant-fab" aria-label="Open Assistant">
+        <img src="../../assets/me_assistant_avatar.png" alt="Assistant" />
+      </button>
+    </div>
+    
+    <!-- Assistant Dialog -->
+    <div id="assistant-dialog" class="assistant-hidden">
+      <div class="assistant-modal">
+        <button id="assistant-close">✕</button>
+    
+        <iframe
+          src="https://huggingface.co/spaces/srk-dot-ai/suhas-rk-professional-assistant/embed"
+          allow="clipboard-write"
+        ></iframe>
+      </div>
+    </div>
+
+    <script is:inline>
+      document.addEventListener("DOMContentLoaded", () => {
+        const fab = document.getElementById("assistant-fab");
+        const dialog = document.getElementById("assistant-dialog");
+        const closeBtn = document.getElementById("assistant-close");
+        const bubble = document.getElementById("assistant-bubble");
+    
+        if (!fab || !dialog || !closeBtn || !bubble) return;
+    
+        /* ---------- Bubble on every load ---------- */
+        setTimeout(() => bubble.classList.add("show"), 900);
+    
+        /* ---------- Open dialog ---------- */
+        fab.addEventListener("click", () => {
+          dialog.classList.remove("assistant-hidden");
+          bubble.classList.remove("show");
+        });
+    
+        /* ---------- Close ---------- */
+        closeBtn.addEventListener("click", () => {
+          dialog.classList.add("assistant-hidden");
+        });
+    
+        dialog.addEventListener("click", (e) => {
+          if (e.target === dialog) {
+            dialog.classList.add("assistant-hidden");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
