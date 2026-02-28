@@ -9,6 +9,7 @@ import Education from "../components/Education.astro";
 import Footer from "../components/Footer.astro";
 import { siteConfig } from "../config";
 import "../styles/global.css";
+import assistantAvatar from "../../assets/me_assistant_avatar.png";
 ---
 
 <html lang="en">
@@ -49,7 +50,7 @@ import "../styles/global.css";
     
       <!-- Avatar button -->
       <button id="assistant-fab" aria-label="Open Assistant">
-        <img src="../../assets/me_assistant_avatar.png" alt="Assistant" />
+        <img src={assistantAvatar.src} alt="Assistant" />
       </button>
     </div>
     
